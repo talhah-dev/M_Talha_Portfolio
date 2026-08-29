@@ -6163,19 +6163,30 @@ input:focus-visible {
 }
 
 .header-three-logo {
-  border: 1px solid #e5e7eb;
-  background: #f5f5f5;
-  padding: 12px 18px 8px;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.header-three-logo a {
+  transition: opacity 0.2s ease;
+}
+
+.header-three-logo a:hover {
+  opacity: 0.7 !important;
+  color: inherit !important;
 }
 
 .header-three-social ul li a {
   border: 1px solid #e5e7eb;
   background: #f5f5f5;
+  transition: opacity 0.2s ease, background 0.2s ease;
 }
 
 .header-three-social ul li a:hover {
-  background: var(--main-two-600);
-  color: hsl(var(--white));
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: inherit !important;
+  opacity: 0.75 !important;
 }
 
 .header-three-button {
