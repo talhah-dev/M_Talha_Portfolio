@@ -322,47 +322,48 @@
                 <h3 class="tw-text-3xl fw-bold text-heading text-uppercase tw-mb-2">Send a Message</h3>
                 <p class="tw-text-base text-muted tw-mb-8">Fill out the form below and I'll get back to you as soon as possible.</p>
 
-                <form action="#">
+                <form class="footer-contact-form" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="7f70c2b4-3c23-46f0-8213-1127639fb2af" />
                   <div class="row g-4">
                     <div class="col-md-6">
                       <div>
                         <label class="form-label text-heading fw-semibold tw-text-sm text-uppercase">First Name</label>
-                        <input type="text" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Your First Name" />
+                        <input type="text" name="name" required class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Your First Name" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div>
                         <label class="form-label text-heading fw-semibold tw-text-sm text-uppercase">Last Name</label>
-                        <input type="text" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Your Last Name" />
+                        <input type="text" name="last_name" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Your Last Name" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div>
                         <label class="form-label text-heading fw-semibold tw-text-sm text-uppercase">Email Address</label>
-                        <input type="email" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="name@example.com" />
+                        <input type="email" name="email" required class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="name@example.com" />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div>
                         <label class="form-label text-heading fw-semibold tw-text-sm text-uppercase">Phone Number</label>
-                        <input type="tel" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Your Phone Number" />
+                        <input type="tel" name="phone" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Your Phone Number" />
                       </div>
                     </div>
                     <div class="col-12">
                       <div>
                         <label class="form-label text-heading fw-semibold tw-text-sm text-uppercase">Subject</label>
-                        <input type="text" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Project Inquiry / General Question" />
+                        <input type="text" name="subject" class="form-control bg-white border border-gray-200 tw-rounded-md tw-h-14 tw-px-4 text-heading focus-border-main-two-600 shadow-none" placeholder="Project Inquiry / General Question" />
                       </div>
                     </div>
                     <div class="col-12">
                       <div>
                         <label class="form-label text-heading fw-semibold tw-text-sm text-uppercase">Your Message</label>
-                        <textarea class="form-control bg-white border border-gray-200 tw-rounded-md tw-px-4 tw-py-3 text-heading focus-border-main-two-600 shadow-none" rows="5" placeholder="Tell me about your project or inquiry..."></textarea>
+                        <textarea name="message" required class="form-control bg-white border border-gray-200 tw-rounded-md tw-px-4 tw-py-3 text-heading focus-border-main-two-600 shadow-none" rows="5" placeholder="Tell me about your project or inquiry..."></textarea>
                       </div>
                     </div>
                     <div class="col-12 pt-2">
                       <button class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block text-uppercase tw-rounded-md w-100 border-0" type="submit">
-                        SUBMIT MESSAGE
+                        <span>SUBMIT MESSAGE</span>
                         <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
                       </button>
                     </div>
@@ -384,12 +385,15 @@
                     Let’s create something meaningful
                   </h2>
                 </div>
-                <div class="d-inline-flex align-items-center tw-gap-6 tw-mb-10 flex-wrap">
-                  <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                    href="mailto:talha18513@gmail.com">talha18513@gmail.com</a>
-                  <span class="tw-text-2xl fw-medium text-main-600">//</span>
-                  <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                    href="tel:03152666263">03152666263</a>
+                <div class="d-flex flex-column tw-gap-3 tw-mb-10">
+                  <div>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
+                      href="mailto:talha18513@gmail.com">talha18513@gmail.com</a>
+                  </div>
+                  <div>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
+                      href="tel:03152666263">03152666263</a>
+                  </div>
                 </div>
                 <div class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6">
                   <div class="footer-three-top-thumb tw-w-160-px">
@@ -420,34 +424,35 @@
             </div>
             <div class="col-xl-6 col-lg-6">
               <div class="footer-three-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <form action="#">
+                <form class="footer-contact-form" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="7f70c2b4-3c23-46f0-8213-1127639fb2af" />
                   <div class="row">
                     <div class="col-xl-12">
                       <div class="position-relative tw-mb-7">
-                        <input type="text"
+                        <input type="text" name="name" required
                           class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
                           placeholder="First Name" />
                       </div>
                     </div>
                     <div class="col-xl-12">
                       <div class="position-relative tw-mb-7">
-                        <input type="email"
+                        <input type="email" name="email" required
                           class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
                           placeholder="Email Address" />
                       </div>
                     </div>
                     <div class="col-xl-12">
                       <div class="position-relative tw-mb-7">
-                        <textarea
+                        <textarea name="message" required
                           class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
                           placeholder="Message"></textarea>
                       </div>
                     </div>
                     <div class="col-xl-12">
                       <div class="contact-button">
-                        <button
+                        <button type="submit"
                           class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg">
-                          submit message
+                          <span>submit message</span>
                         </button>
                       </div>
                     </div>
@@ -537,6 +542,7 @@
   <script src="assets/js/custom-gsap.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tw-cursor.js"></script>
+  <script src="assets/js/web3forms-handler.js"></script>
 </body>
 
 </html>

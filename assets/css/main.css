@@ -487,13 +487,32 @@ textarea:-webkit-autofill:active {
 
 input:-webkit-autofill,
 textarea:-webkit-autofill,
-select:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill {
+select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-  -webkit-text-fill-color: hsl(var(--heading-color)) !important;
-  caret-color: hsl(var(--heading-color));
+  -webkit-text-fill-color: inherit !important;
+  caret-color: currentColor;
+}
+
+/* Footer & Dark Form Chrome Autofill Fix */
+.footer-three-form input:-webkit-autofill,
+.footer-three-form input:-webkit-autofill:hover,
+.footer-three-form input:-webkit-autofill:focus,
+.footer-three-form input:-webkit-autofill:active,
+.footer-three-form textarea:-webkit-autofill,
+.footer-three-form textarea:-webkit-autofill:hover,
+.footer-three-form textarea:-webkit-autofill:focus,
+.footer-three-form textarea:-webkit-autofill:active,
+.footer-contact-form input:-webkit-autofill,
+.footer-contact-form input:-webkit-autofill:hover,
+.footer-contact-form input:-webkit-autofill:focus,
+.footer-contact-form input:-webkit-autofill:active,
+.footer-contact-form textarea:-webkit-autofill,
+.footer-contact-form textarea:-webkit-autofill:hover,
+.footer-contact-form textarea:-webkit-autofill:focus,
+.footer-contact-form textarea:-webkit-autofill:active {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #0e1117 inset !important;
+  caret-color: #ffffff !important;
 }
 
 /* Autofill Css End */
@@ -9446,7 +9465,8 @@ body.tw-magic-cursor #magic-cursor {
   }
 }
 
-.portfolio-three-item {
+/* Home Page Staggered Portfolio Items */
+.portfolio-three-wrapper .portfolio-three-item {
   width: 48.5% !important;
   max-width: 48.5% !important;
   background: #f5f5f5;
@@ -9456,38 +9476,50 @@ body.tw-magic-cursor #magic-cursor {
   margin-bottom: 50px !important;
 }
 
-.portfolio-three-item:nth-child(even) {
+.portfolio-three-wrapper .portfolio-three-item:nth-child(even) {
   margin-top: 620px !important;
 }
 
 @media screen and (max-width: 1699px) {
-  .portfolio-three-item:nth-child(even) {
+  .portfolio-three-wrapper .portfolio-three-item:nth-child(even) {
     margin-top: 570px !important;
   }
 }
 
 @media screen and (max-width: 1499px) {
-  .portfolio-three-item:nth-child(even) {
+  .portfolio-three-wrapper .portfolio-three-item:nth-child(even) {
     margin-top: 510px !important;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .portfolio-three-item:nth-child(even) {
+  .portfolio-three-wrapper .portfolio-three-item:nth-child(even) {
     margin-top: 450px !important;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .portfolio-three-item {
+  .portfolio-three-wrapper .portfolio-three-item {
     width: 100% !important;
     max-width: 100% !important;
     margin-top: 0 !important;
   }
 
-  .portfolio-three-item:nth-child(even) {
+  .portfolio-three-wrapper .portfolio-three-item:nth-child(even) {
     margin-top: 0 !important;
   }
+}
+
+/* Portfolio Page Standard Grid Items */
+.portfolio-area .portfolio-three-item {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.portfolio-area .portfolio-three-item:nth-child(even) {
+  margin-top: 0 !important;
 }
 
 .portfolio-three-wrap {

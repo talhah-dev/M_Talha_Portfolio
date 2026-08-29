@@ -866,12 +866,12 @@
                       <div>
                         <span
                           class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">Full
-                          Stack Developer - Ongoing Client Projects</span>
+                          Stack Developer</span>
                       </div>
                     </div>
                     <div>
                       <span
-                        class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block">2024
+                        class="feature-three-text tw-text-605 fw-medium text-white tw-transition-3 d-inline-block text-nowrap">2024
                         - PRESENT</span>
                     </div>
                   </div>
@@ -889,7 +889,7 @@
             <div class="col-xl-10">
               <div class="text-center">
                 <h2 class="testimonial-three-title text-heading tw-text-15 tw-itm-title tw-itm-anim">
-                  I believe great software is built on clean code, thoughtful design, and a relentless focus on what
+                  Great software is built on clean code, thoughtful design, and a relentless focus on what
                   actually works for the user.
                 </h2>
               </div>
@@ -982,12 +982,15 @@
                     Let’s create something meaningful
                   </h2>
                 </div>
-                <div class="d-inline-flex align-items-center tw-gap-6 tw-mb-10 flex-wrap">
-                  <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                    href="mailto:talha18513@gmail.com">talha18513@gmail.com</a>
-                  <span class="tw-text-2xl fw-medium text-main-600">//</span>
-                  <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
-                    href="tel:03152666263">03152666263</a>
+                <div class="d-flex flex-column tw-gap-3 tw-mb-10">
+                  <div>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
+                      href="mailto:talha18513@gmail.com">talha18513@gmail.com</a>
+                  </div>
+                  <div>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white"
+                      href="tel:03152666263">03152666263</a>
+                  </div>
                 </div>
                 <div class="footer-three-top-info tw-p-705 tw-rounded-lg d-flex tw-gap-6">
                   <div class="footer-three-top-thumb tw-w-160-px">
@@ -1020,34 +1023,35 @@
             </div>
             <div class="col-xl-6 col-lg-6">
               <div class="footer-three-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <form action="#">
+                <form class="footer-contact-form" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="7f70c2b4-3c23-46f0-8213-1127639fb2af" />
                   <div class="row">
                     <div class="col-xl-12">
                       <div class="position-relative tw-mb-7">
-                        <input type="text"
+                        <input type="text" name="name" required
                           class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
                           placeholder="First Name" />
                       </div>
                     </div>
                     <div class="col-xl-12">
                       <div class="position-relative tw-mb-7">
-                        <input type="email"
+                        <input type="email" name="email" required
                           class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
                           placeholder="Email Address" />
                       </div>
                     </div>
                     <div class="col-xl-12">
                       <div class="position-relative tw-mb-7">
-                        <textarea
+                        <textarea name="message" required
                           class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
                           placeholder="Message"></textarea>
                       </div>
                     </div>
                     <div class="col-xl-12">
                       <div class="contact-button">
-                        <button
+                        <button type="submit"
                           class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg">
-                          submit message
+                          <span>submit message</span>
                         </button>
                       </div>
                     </div>
@@ -1154,6 +1158,7 @@
   <script src="assets/js/main.js"></script>
 
   <script src="assets/js/tw-cursor.js"></script>
+  <script src="assets/js/web3forms-handler.js"></script>
 </body>
 
 </html>
