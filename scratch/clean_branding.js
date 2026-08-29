@@ -22,12 +22,12 @@ files.forEach(({ name, page, title }) => {
   );
   content = content.replace(/<title>[\s\S]*?<\/title>/, `<title>${title}</title>`);
 
-  // 2. Replace Header & Offcanvas Logo Images with Text "MY PORTFOLIO"
+  // 2. Replace Header & Offcanvas Logo Images with Text "TALHA DEV"
   content = content.replace(
     /<div class="header-three-logo tw-rounded-md">[\s\S]*?<\/div>/,
     `<div class="header-three-logo tw-rounded-md">
           <a href="index.html" class="link tw-text-2xl fw-bold text-uppercase text-heading tracking-wider">
-            MY PORTFOLIO
+            TALHA DEV
           </a>
         </div>`
   );
@@ -35,7 +35,7 @@ files.forEach(({ name, page, title }) => {
   content = content.replace(
     /<div class="twoffcanvas__logo">[\s\S]*?<\/div>/,
     `<div class="twoffcanvas__logo">
-            <a class="logo-1 tw-text-2xl fw-bold text-uppercase text-white tracking-wider" href="index.html">MY PORTFOLIO</a>
+            <a class="logo-1 tw-text-2xl fw-bold text-uppercase text-white tracking-wider" href="index.html">TALHA DEV</a>
           </div>`
   );
 
