@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cortexAI — Full Stack AI Chat Platform | Talha Dev Portfolio</title>
+  <meta name="description" content="cortexAI is a microservices-based AI chat platform featuring LangGraph multi-agent orchestration, Redis caching, Monaco code preview, and AWS S3 document generation." />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.ico" />
+
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <!-- Top Action Bar & Project Header -->
+      <section class="breadcrumb pt-5 pb-5 bg-light position-relative overflow-hidden border-bottom border-gray-200">
+        <div class="container tw-container-1800-px position-relative z-1">
+          <!-- Back Button Bar -->
+          <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom border-gray-200">
+            <a href="javascript:void(0)" onclick="if(document.referrer){window.history.back();}else{window.location.href='index.html';}" class="tw-hover-btn bg-black text-white fw-bold tw-py-3 tw-px-6 d-inline-flex align-items-center tw-gap-2 text-uppercase tw-rounded-md shadow-sm">
+              <i class="ph-bold ph-arrow-left tw-text-lg"></i>
+              <span>BACK TO PREVIOUS PAGE</span>
+              <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
+            </a>
+            <a href="index.html" class="tw-text-2xl fw-bold text-heading text-uppercase tracking-wider hover-opacity-70 tw-transition-3">TALHA DEV</a>
+          </div>
+
+          <!-- Title & Action Buttons -->
+          <div class="row align-items-center pt-2">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+              <div class="d-flex tw-gap-2 flex-wrap mb-3">
+                <span class="badge bg-main-two-600 text-white text-uppercase px-3 py-2">AI PLATFORM</span>
+                <span class="badge bg-black text-white text-uppercase px-3 py-2">MICROSERVICES</span>
+                <span class="badge bg-secondary text-white text-uppercase px-3 py-2">LANGGRAPH</span>
+                <span class="badge bg-dark text-white text-uppercase px-3 py-2">REDIS &amp; AWS S3</span>
+              </div>
+              <h1 class="tw-text-5xl text-heading fw-bold text-uppercase tw-mb-4">cortexAI</h1>
+              <p class="tw-text-xl text-muted mb-0">Full Stack AI Chat &amp; Multi-Agent Orchestration Platform (Personal Project)</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0 d-flex flex-column align-items-lg-end tw-gap-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <a href="https://github.com/talhah-dev/cotexAI" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-8 d-inline-flex align-items-center justify-content-center tw-gap-3 text-uppercase tw-rounded-md shadow-sm w-100" style="max-width: 280px;">
+                <i class="ph-bold ph-github-logo tw-text-xl"></i>
+                <span>VIEW GITHUB REPO</span>
+                <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
+              </a>
+              <a href="contact.html" class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-8 d-inline-flex align-items-center justify-content-center tw-gap-3 text-uppercase tw-rounded-md shadow-sm w-100" style="max-width: 280px;">
+                <i class="ph-bold ph-download-simple tw-text-xl"></i>
+                <span>DOWNLOAD CV</span>
+                <span class="tw-hover-btn-circle-dot bg-black"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Showcase Section -->
+      <section class="py-120 bg-white border-bottom border-gray-200">
+        <div class="container tw-container-1800-px">
+          <div class="row justify-content-center">
+            <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1000">
+              <div class="position-relative rounded-4 overflow-hidden border border-gray-200 shadow-lg bg-black">
+                <video class="w-100 d-block" controls autoplay loop muted poster="assets/images/portfolio/cortex-ai-banner.jpg" style="max-height: 720px; object-fit: contain;">
+                  <source src="https://f7m4enyxvx3urxqn.public.blob.vercel-storage.com/Untitled%20design.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Overview & Detailed Features -->
+      <section class="py-120 bg-light border-bottom border-gray-200">
+        <div class="container tw-container-1800-px">
+          <div class="row g-5">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+              <div class="p-4 p-md-5 bg-white border border-gray-200 tw-rounded-lg shadow-sm">
+                <h2 class="tw-text-3xl text-heading fw-bold text-uppercase tw-mb-6 pb-3 border-bottom border-gray-200">Project Overview</h2>
+                
+                <p class="tw-text-lg text-heading tw-mb-6 lh-lg">
+                  <strong>cortexAI</strong> is a Full Stack AI Chat &amp; Multi-Agent Orchestration Platform built with a modern microservices architecture. Designed for high performance, modular scalability, and complex AI agent workflows, cortexAI integrates multiple LLM providers, real-time web search grounding, live code artifact previews, and server-side document generation.
+                </p>
+
+                <h3 class="tw-text-2xl text-heading fw-bold text-uppercase tw-mb-4 mt-5">Core Technical Architecture &amp; Key Features</h3>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">1. Microservices Architecture (4 Express Services)</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Architected a microservices-based AI chat platform with 4 independent Express.js services (<strong>API Gateway</strong>, <strong>Auth Service</strong>, <strong>Chat Service</strong>, and <strong>Agent Service</strong>) communicating over HTTP, following a database-per-service pattern with dedicated MongoDB Atlas databases.
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">2. Multi-Agent AI Orchestration System (LangGraph)</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Built a multi-agent AI orchestration system using <strong>LangGraph</strong>, featuring an LLM-powered intent router that dynamically dispatches requests across <strong>6 specialized agents</strong> (chat, web search, coding, PDF/PPT generation, image generation).
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">3. Unified Multi-LLM Provider Integration</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Integrated multiple LLM providers (<strong>Groq</strong>, <strong>OpenRouter / DeepSeek</strong>, <strong>Google Gemini</strong>) with a unified model-selection abstraction, plus <strong>Tavily API</strong> for real-time web search grounding.
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">4. Hybrid Authentication &amp; Session Layer</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Implemented hybrid authentication combining <strong>Firebase OAuth (Google Sign-In)</strong> with <strong>Redis-backed server-side sessions</strong> (httpOnly cookies, 7-day TTL) for secure, stateful auth beyond standard JWT.
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">5. Redis Memory Caching Layer</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Designed a Redis caching layer for conversation memory using a sliding-window (20-message) cache-aside pattern, reducing repeated database reads and improving response latency.
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">6. Live Monaco Code-Artifact Preview System</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Built a code-artifact generation system where AI-generated multi-file projects render live in an embedded Monaco Editor with live iframe preview rendering.
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">7. Document Generation &amp; AWS S3 Delivery</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Implemented server-side document generation (PDF via <strong>pdfkit</strong>, PPT via <strong>pptxgenjs</strong>) with <strong>AWS S3</strong> storage and presigned URL delivery.
+                  </p>
+                </div>
+
+                <!-- Backend Hosting Notice Alert -->
+                <div class="p-4 bg-light border border-warning-subtle tw-rounded-md mt-5">
+                  <div class="d-flex tw-gap-3 align-items-start">
+                    <i class="ph-bold ph-info text-warning tw-text-2xl flex-shrink-0 mt-1"></i>
+                    <div>
+                      <h5 class="tw-text-base text-heading fw-bold mb-1">Backend Deployment Note</h5>
+                      <p class="tw-text-sm text-muted mb-0">
+                        While the full frontend demonstration is recorded in the video walkthrough above, the Node.js Express backend microservices are currently paused on live cloud deployment due to free-tier hosting limits. However, the complete production-ready codebase for all 4 microservices is fully accessible on GitHub.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sidebar Specifications -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div class="p-4 p-md-5 bg-white border border-gray-200 tw-rounded-lg shadow-sm mb-4">
+                <h3 class="tw-text-xl text-heading fw-bold text-uppercase tw-mb-6 pb-3 border-bottom border-gray-200">Project Specs</h3>
+                
+                <div class="mb-4">
+                  <span class="tw-text-xs text-uppercase fw-bold text-muted d-block mb-1">Project Type</span>
+                  <span class="tw-text-base text-heading fw-semibold">Personal Project / Full Stack AI</span>
+                </div>
+
+                <div class="mb-4">
+                  <span class="tw-text-xs text-uppercase fw-bold text-muted d-block mb-1">Architecture</span>
+                  <span class="tw-text-base text-heading fw-semibold">Microservices (4 Express Services)</span>
+                </div>
+
+                <div class="mb-4">
+                  <span class="tw-text-xs text-uppercase fw-bold text-muted d-block mb-1">Technologies Used</span>
+                  <div class="d-flex flex-wrap tw-gap-2 mt-2">
+                    <span class="badge bg-light text-heading border border-gray-200">React</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Node.js</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Express.js</span>
+                    <span class="badge bg-light text-heading border border-gray-200">MongoDB Atlas</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Redis</span>
+                    <span class="badge bg-light text-heading border border-gray-200">LangGraph</span>
+                    <span class="badge bg-light text-heading border border-gray-200">LangChain</span>
+                    <span class="badge bg-light text-heading border border-gray-200">AWS S3</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Groq LLM</span>
+                    <span class="badge bg-light text-heading border border-gray-200">DeepSeek</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Gemini</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Firebase OAuth</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Tavily API</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Monaco Editor</span>
+                  </div>
+                </div>
+
+                <div class="pt-3 border-top border-gray-200 d-flex flex-column tw-gap-3">
+                  <a href="https://github.com/talhah-dev/cotexAI" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-6 d-inline-flex align-items-center justify-content-center tw-gap-2 text-uppercase tw-rounded-md w-100">
+                    <i class="ph-bold ph-github-logo tw-text-xl"></i>
+                    <span>GITHUB REPOSITORY</span>
+                  </a>
+                  <a href="contact.html" class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-6 d-inline-flex align-items-center justify-content-center tw-gap-2 text-uppercase tw-rounded-md w-100">
+                    <i class="ph-bold ph-download-simple tw-text-xl"></i>
+                    <span>DOWNLOAD CV</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <section class="footer-three-area pt-120 tw-pb-10 position-relative z-1">
+        <div class="container tw-container-1800-px">
+          <div class="row justify-content-between pb-120">
+            <div class="col-xl-5 col-lg-6">
+              <div class="footer-three-top-left tw-me-25" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="tw-mb-9">
+                  <h2 class="tw-text-15 text-white">Let’s create something meaningful</h2>
+                </div>
+                <div class="d-flex flex-column tw-gap-3 tw-mb-10">
+                  <div>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white" href="mailto:talha18513@gmail.com">talha18513@gmail.com</a>
+                  </div>
+                  <div>
+                    <a class="tw-text-2xl fw-medium text-main-600 hover-underline hover-text-white" href="tel:03152666263">03152666263</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="footer-three-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <form class="footer-contact-form" action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="7f70c2b4-3c23-46f0-8213-1127639fb2af" />
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <div class="position-relative tw-mb-7">
+                        <input type="text" name="name" required class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18" placeholder="First Name" />
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <div class="position-relative tw-mb-7">
+                        <input type="email" name="email" required class="form-control bg-transparent shadow-none tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600 tw-h-18" placeholder="Email Address" />
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <div class="position-relative tw-mb-7">
+                        <textarea name="message" required class="form-control bg-transparent shadow-none tw-h-196-px tw-rounded-lg text-white tw-ps-7 tw-pe-13 tw-placeholder-text-neutral-100 focus-border-main-600" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-xl-12">
+                      <div class="contact-button">
+                        <button type="submit" class="tw-hover-btn bg-main-600 text-heading tw-text-xl fw-bold tw-py-4 tw-px-10 d-inline-flex justify-content-center w-100 hover-text-heading hover-bg-white tw-transition-3 tw-rounded-lg">
+                          <span>submit message</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-three-border tw-px-18 tw-mb-10">
+          <div class="container-fluid gx-0">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="footer-three-middile d-flex align-items-center justify-content-between">
+                  <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h4 class="tw-text-2xl text-white tw-mb-2">Quick Links</h4>
+                    <ul class="d-flex tw-gap-2 flex-wrap">
+                      <li><a class="tw-text-lg text-white" href="index.html">Home,</a></li>
+                      <li><a class="tw-text-lg text-white" href="about.html">About,</a></li>
+                      <li><a class="tw-text-lg text-white" href="portfolio.html">Portfolio,</a></li>
+                      <li><a class="tw-text-lg text-white" href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a class="footer-three-back-to-top tw-w-170 tw-h-170 lh-1 d-inline-flex justify-content-center align-items-center bg-main-two-600 text-white tw-text-3xl rounded-circle" href="#"><i class="ph ph-arrow-up"></i></a>
+                  </div>
+                  <div class="text-lg-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h4 class="tw-text-2xl text-white tw-mb-2">Talha</h4>
+                    <p class="tw-text-lg text-white">© 2026 All rights reserved</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="container tw-container-1800-px">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="footer-three-bottom text-center">
+                  <h5 class="footer-three-bottom-title text-white text-center">M Talha</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/phosphor-icon.js"></script>
+  <script src="assets/js/boostrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.marquee.min.js"></script>
+  <script src="assets/js/purecounter.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/gsap/gsap.js"></script>
+  <script src="assets/js/gsap/gsap-scroll-to-plugin.js"></script>
+  <script src="assets/js/gsap/gsap-scroll-smoother.js"></script>
+  <script src="assets/js/gsap/gsap-scroll-trigger.js"></script>
+  <script src="assets/js/gsap/gsap-split-text.js"></script>
+  <script src="assets/js/gsap/chroma.min.js"></script>
+  <script src="assets/js/slider-active.js"></script>
+  <script src="assets/js/custom-gsap.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/tw-cursor.js"></script>
+  <script src="assets/js/web3forms-handler.js"></script>
+</body>
+
+</html>
