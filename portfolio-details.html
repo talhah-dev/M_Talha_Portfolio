@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cortexAI — Full Stack AI Chat Platform | Talha Dev Portfolio</title>
-  <meta name="description" content="cortexAI is a microservices-based AI chat platform featuring LangGraph multi-agent orchestration, Redis caching, Monaco code preview, and AWS S3 document generation." />
+  <title>Quzex — Full Stack Next.js 16 Agency & CMS Platform | Talha Dev Portfolio</title>
+  <meta name="description" content="Quzex is a modern full-stack Next.js 16 agency website and CMS featuring React 19, MongoDB Atlas, an Admin Dashboard, TanStack React Query, custom auth, and AI/LLM readiness." />
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/logo/favicon.ico" />
@@ -26,7 +26,7 @@
         <div class="container tw-container-1800-px position-relative z-1">
           <!-- Back Button Bar -->
           <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom border-gray-200">
-            <a href="javascript:void(0)" onclick="if(document.referrer){window.history.back();}else{window.location.href='index.html';}" class="tw-hover-btn bg-black text-white fw-bold tw-py-3 tw-px-6 d-inline-flex align-items-center tw-gap-2 text-uppercase tw-rounded-md shadow-sm">
+            <a href="index.html" onclick="if(document.referrer && document.referrer !== window.location.href){window.location.href=document.referrer;return false;}else{window.location.href='index.html';return false;}" class="tw-hover-btn bg-black text-white fw-bold tw-py-3 tw-px-6 d-inline-flex align-items-center tw-gap-2 text-uppercase tw-rounded-md shadow-sm">
               <i class="ph-bold ph-arrow-left tw-text-lg"></i>
               <span>BACK TO PREVIOUS PAGE</span>
               <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
@@ -38,24 +38,25 @@
           <div class="row align-items-center pt-2">
             <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
               <div class="d-flex tw-gap-2 flex-wrap mb-3">
-                <span class="badge bg-main-two-600 text-white text-uppercase px-3 py-2">AI PLATFORM</span>
-                <span class="badge bg-black text-white text-uppercase px-3 py-2">MICROSERVICES</span>
-                <span class="badge bg-secondary text-white text-uppercase px-3 py-2">LANGGRAPH</span>
-                <span class="badge bg-dark text-white text-uppercase px-3 py-2">REDIS &amp; AWS S3</span>
+                <span class="badge bg-main-two-600 text-white text-uppercase px-3 py-2">NEXT.JS 16</span>
+                <span class="badge bg-black text-white text-uppercase px-3 py-2">REACT 19</span>
+                <span class="badge bg-secondary text-white text-uppercase px-3 py-2">ADMIN DASHBOARD</span>
+                <span class="badge bg-primary text-white text-uppercase px-3 py-2">MONGODB ATLAS</span>
+                <span class="badge bg-dark text-white text-uppercase px-3 py-2">AI-READY</span>
               </div>
-              <h1 class="tw-text-5xl text-heading fw-bold text-uppercase tw-mb-4">cortexAI</h1>
-              <p class="tw-text-xl text-muted mb-0">Full Stack AI Chat &amp; Multi-Agent Orchestration Platform (Personal Project)</p>
+              <h1 class="tw-text-5xl text-heading fw-bold text-uppercase tw-mb-4">Quzex</h1>
+              <p class="tw-text-xl text-muted mb-0">Full Stack Agency Platform &amp; CMS with Admin Dashboard &amp; AI Integration (Personal Project)</p>
             </div>
             <div class="col-lg-4 text-lg-end mt-4 mt-lg-0 d-flex flex-column align-items-lg-end tw-gap-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <a href="https://github.com/talhah-dev/cotexAI" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-8 d-inline-flex align-items-center justify-content-center tw-gap-3 text-uppercase tw-rounded-md shadow-sm w-100" style="max-width: 280px;">
+              <a href="https://quzex.co" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-8 d-inline-flex align-items-center justify-content-center tw-gap-3 text-uppercase tw-rounded-md shadow-sm w-100" style="max-width: 280px;">
+                <i class="ph-bold ph-globe tw-text-xl"></i>
+                <span>VISIT LIVE SITE</span>
+                <span class="tw-hover-btn-circle-dot bg-black"></span>
+              </a>
+              <a href="https://github.com/talhah-dev/quzex_website" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-8 d-inline-flex align-items-center justify-content-center tw-gap-3 text-uppercase tw-rounded-md shadow-sm w-100" style="max-width: 280px;">
                 <i class="ph-bold ph-github-logo tw-text-xl"></i>
                 <span>VIEW GITHUB REPO</span>
                 <span class="tw-hover-btn-circle-dot bg-main-two-600"></span>
-              </a>
-              <a href="contact.html" class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-8 d-inline-flex align-items-center justify-content-center tw-gap-3 text-uppercase tw-rounded-md shadow-sm w-100" style="max-width: 280px;">
-                <i class="ph-bold ph-download-simple tw-text-xl"></i>
-                <span>DOWNLOAD CV</span>
-                <span class="tw-hover-btn-circle-dot bg-black"></span>
               </a>
             </div>
           </div>
@@ -68,8 +69,8 @@
           <div class="row justify-content-center">
             <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1000">
               <div class="position-relative rounded-4 overflow-hidden border border-gray-200 shadow-lg bg-black">
-                <video class="w-100 d-block" controls autoplay loop muted poster="assets/images/portfolio/cortex-ai-banner.jpg" style="max-height: 720px; object-fit: contain;">
-                  <source src="https://f7m4enyxvx3urxqn.public.blob.vercel-storage.com/Untitled%20design.mp4" type="video/mp4" />
+                <video class="w-100 d-block" controls autoplay loop muted poster="assets/images/portfolio/quzex-banner.png" style="max-height: 720px; object-fit: contain;">
+                  <source src="https://f7m4enyxvx3urxqn.public.blob.vercel-storage.com/Untitled%20design%20%281%29.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -87,72 +88,60 @@
                 <h2 class="tw-text-3xl text-heading fw-bold text-uppercase tw-mb-6 pb-3 border-bottom border-gray-200">Project Overview</h2>
                 
                 <p class="tw-text-lg text-heading tw-mb-6 lh-lg">
-                  <strong>cortexAI</strong> is a Full Stack AI Chat &amp; Multi-Agent Orchestration Platform built with a modern microservices architecture. Designed for high performance, modular scalability, and complex AI agent workflows, cortexAI integrates multiple LLM providers, real-time web search grounding, live code artifact previews, and server-side document generation.
+                  <strong>Quzex</strong> is a complete, full-stack Next.js 16 agency website and content management system (CMS) built with React 19. Designed for digital agencies and high-growth platforms, Quzex features a fully customizable Admin Dashboard allowing A-to-Z control over blogs, services, portfolio cards, testimonials, client logos, and site settings, backed by MongoDB Atlas and Vercel Blob storage.
                 </p>
 
                 <h3 class="tw-text-2xl text-heading fw-bold text-uppercase tw-mb-4 mt-5">Core Technical Architecture &amp; Key Features</h3>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">1. Microservices Architecture (4 Express Services)</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">1. Next.js 16 &amp; React 19 App Router Stack</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
-                    Architected a microservices-based AI chat platform with 4 independent Express.js services (<strong>API Gateway</strong>, <strong>Auth Service</strong>, <strong>Chat Service</strong>, and <strong>Agent Service</strong>) communicating over HTTP, following a database-per-service pattern with dedicated MongoDB Atlas databases.
+                    Engineered with Next.js 16.1.6 App Router, React 19.2.3, TypeScript 5, Tailwind CSS v4, and shadcn/ui v3.8.5 (New York style with Radix UI primitives). Built with Server Components for optimal initial page loads and SEO.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">2. Multi-Agent AI Orchestration System (LangGraph)</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">2. Two-Tier API &amp; MongoDB Architecture</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
-                    Built a multi-agent AI orchestration system using <strong>LangGraph</strong>, featuring an LLM-powered intent router that dynamically dispatches requests across <strong>6 specialized agents</strong> (chat, web search, coding, PDF/PPT generation, image generation).
+                    Designed Next.js API Routes (`src/app/api/`) into two distinct tiers: public read-only endpoints (`/api/users/*`) and secure authenticated CRUD routes (`/api/admin/*`), plus versioned APIs (`/api/v1/*`). Managed via MongoDB Atlas with 9 Mongoose models (AdminUser, Blog, BlogComment, ClientLogo, ContactInquiry, PortfolioCard, Service, SiteSettings, Testimonial) and RFC 9457 ProblemDetails error responses.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">3. Unified Multi-LLM Provider Integration</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">3. Full Admin Dashboard with A-to-Z Management</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
-                    Integrated multiple LLM providers (<strong>Groq</strong>, <strong>OpenRouter / DeepSeek</strong>, <strong>Google Gemini</strong>) with a unified model-selection abstraction, plus <strong>Tavily API</strong> for real-time web search grounding.
+                    Built an internal admin suite enabling administrators to manage all website content seamlessly—including live blog moderation, service listings, client logos, testimonials, and site metadata—with instant Vercel Blob media uploads.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">4. Hybrid Authentication &amp; Session Layer</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">4. State Management &amp; Data Fetching (TanStack React Query v5)</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
-                    Implemented hybrid authentication combining <strong>Firebase OAuth (Google Sign-In)</strong> with <strong>Redis-backed server-side sessions</strong> (httpOnly cookies, 7-day TTL) for secure, stateful auth beyond standard JWT.
+                    Implemented `@tanstack/react-query` v5 with optimized caching (`staleTime: 5 min`, `gcTime: 30 min`), automatic query invalidation on mutations, toast notifications via Sonner, and Server Component `initialData` passing for smooth SSR &amp; client-side transitions.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">5. Redis Memory Caching Layer</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">5. Custom Authentication &amp; Proxy Guard</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
-                    Designed a Redis caching layer for conversation memory using a sliding-window (20-message) cache-aside pattern, reducing repeated database reads and improving response latency.
+                    Implemented a zero-dependency custom auth system featuring WebCrypto HMAC-SHA256 signed session tokens, bcryptjs password hashing, `httpOnly` cookie session storage (`quzex_admin_session`), and a `proxy.ts` middleware to protect `/dashboard` and manage API rewrites.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">6. Live Monaco Code-Artifact Preview System</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">6. Advanced Animations &amp; UI Utilities</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
-                    Built a code-artifact generation system where AI-generated multi-file projects render live in an embedded Monaco Editor with live iframe preview rendering.
+                    Crafted smooth user interactions using Framer Motion (v12), Lucide React icons, Class Variance Authority (CVA), `next-themes` dark/light mode, and custom Tailwind animation extensions.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">7. Document Generation &amp; AWS S3 Delivery</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">7. AI / LLM-Ready &amp; Programmatic Endpoints</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
-                    Implemented server-side document generation (PDF via <strong>pdfkit</strong>, PPT via <strong>pptxgenjs</strong>) with <strong>AWS S3</strong> storage and presigned URL delivery.
+                    Built first-class AI readiness features including `/llms.txt`, `/llms-full.txt`, `/openapi.json`, programmatic `/developer` docs, markdown content-negotiation via `Accept: text/markdown` headers, and full JSON-LD structured data schemas for search engines and LLM agents.
                   </p>
                 </div>
 
-                <!-- Backend Hosting Notice Alert -->
-                <div class="p-4 bg-light border border-warning-subtle tw-rounded-md mt-5">
-                  <div class="d-flex tw-gap-3 align-items-start">
-                    <i class="ph-bold ph-info text-warning tw-text-2xl flex-shrink-0 mt-1"></i>
-                    <div>
-                      <h5 class="tw-text-base text-heading fw-bold mb-1">Backend Deployment Note</h5>
-                      <p class="tw-text-sm text-muted mb-0">
-                        While the full frontend demonstration is recorded in the video walkthrough above, the Node.js Express backend microservices are currently paused on live cloud deployment due to free-tier hosting limits. However, the complete production-ready codebase for all 4 microservices is fully accessible on GitHub.
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -163,40 +152,42 @@
                 
                 <div class="mb-4">
                   <span class="tw-text-xs text-uppercase fw-bold text-muted d-block mb-1">Project Type</span>
-                  <span class="tw-text-base text-heading fw-semibold">Personal Project / Full Stack AI</span>
+                  <span class="tw-text-base text-heading fw-semibold">Personal Project / Full Stack Agency CMS</span>
                 </div>
 
                 <div class="mb-4">
                   <span class="tw-text-xs text-uppercase fw-bold text-muted d-block mb-1">Architecture</span>
-                  <span class="tw-text-base text-heading fw-semibold">Microservices (4 Express Services)</span>
+                  <span class="tw-text-base text-heading fw-semibold">Next.js 16 App Router &amp; Admin CMS</span>
                 </div>
 
                 <div class="mb-4">
                   <span class="tw-text-xs text-uppercase fw-bold text-muted d-block mb-1">Technologies Used</span>
                   <div class="d-flex flex-wrap tw-gap-2 mt-2">
-                    <span class="badge bg-light text-heading border border-gray-200">React</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Node.js</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Express.js</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Next.js 16</span>
+                    <span class="badge bg-light text-heading border border-gray-200">React 19</span>
+                    <span class="badge bg-light text-heading border border-gray-200">TypeScript 5</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Tailwind CSS v4</span>
+                    <span class="badge bg-light text-heading border border-gray-200">shadcn/ui</span>
                     <span class="badge bg-light text-heading border border-gray-200">MongoDB Atlas</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Redis</span>
-                    <span class="badge bg-light text-heading border border-gray-200">LangGraph</span>
-                    <span class="badge bg-light text-heading border border-gray-200">LangChain</span>
-                    <span class="badge bg-light text-heading border border-gray-200">AWS S3</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Groq LLM</span>
-                    <span class="badge bg-light text-heading border border-gray-200">DeepSeek</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Gemini</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Firebase OAuth</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Tavily API</span>
-                    <span class="badge bg-light text-heading border border-gray-200">Monaco Editor</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Mongoose</span>
+                    <span class="badge bg-light text-heading border border-gray-200">React Query v5</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Framer Motion</span>
+                    <span class="badge bg-light text-heading border border-gray-200">Vercel Blob</span>
+                    <span class="badge bg-light text-heading border border-gray-200">WebCrypto HMAC</span>
+                    <span class="badge bg-light text-heading border border-gray-200">AI / LLM-Ready</span>
                   </div>
                 </div>
 
                 <div class="pt-3 border-top border-gray-200 d-flex flex-column tw-gap-3">
-                  <a href="https://github.com/talhah-dev/cotexAI" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-6 d-inline-flex align-items-center justify-content-center tw-gap-2 text-uppercase tw-rounded-md w-100">
+                  <a href="https://quzex.co" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-6 d-inline-flex align-items-center justify-content-center tw-gap-2 text-uppercase tw-rounded-md w-100">
+                    <i class="ph-bold ph-globe tw-text-xl"></i>
+                    <span>VISIT LIVE WEBSITE</span>
+                  </a>
+                  <a href="https://github.com/talhah-dev/quzex_website" target="_blank" rel="noopener noreferrer" class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-6 d-inline-flex align-items-center justify-content-center tw-gap-2 text-uppercase tw-rounded-md w-100">
                     <i class="ph-bold ph-github-logo tw-text-xl"></i>
                     <span>GITHUB REPOSITORY</span>
                   </a>
-                  <a href="contact.html" class="tw-hover-btn bg-main-two-600 text-white fw-bold tw-py-4 tw-px-6 d-inline-flex align-items-center justify-content-center tw-gap-2 text-uppercase tw-rounded-md w-100">
+                  <a href="contact.html" class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-6 d-inline-flex align-items-center justify-content-center tw-gap-2 text-uppercase tw-rounded-md w-100">
                     <i class="ph-bold ph-download-simple tw-text-xl"></i>
                     <span>DOWNLOAD CV</span>
                   </a>
