@@ -9958,10 +9958,10 @@ body.tw-magic-cursor #magic-cursor {
 
 .service-three-single {
   border: 2px solid rgba(255, 255, 255, 0.1);
-  padding: 30px 30px 30px 60px;
+  padding: 30px 40px;
   border-radius: 200px;
   margin-block-end: 60px;
-  max-width: 1500px;
+  max-width: 100%;
   width: 100%;
   transition: 0.5s;
 }
