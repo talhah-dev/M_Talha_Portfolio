@@ -42,7 +42,8 @@
                 <span class="badge bg-black text-white text-uppercase px-3 py-2">REACT 19</span>
                 <span class="badge bg-secondary text-white text-uppercase px-3 py-2">ADMIN DASHBOARD</span>
                 <span class="badge bg-primary text-white text-uppercase px-3 py-2">MONGODB ATLAS</span>
-                <span class="badge bg-dark text-white text-uppercase px-3 py-2">AI-READY</span>
+                <span class="badge bg-dark text-white text-uppercase px-3 py-2">AI AUTO-BLOGGING</span>
+                <span class="badge bg-success text-white text-uppercase px-3 py-2">AI-READY</span>
               </div>
               <h1 class="tw-text-5xl text-heading fw-bold text-uppercase tw-mb-4">Quzex</h1>
               <p class="tw-text-xl text-muted mb-0">Full Stack Agency Platform &amp; CMS with Admin Dashboard &amp; AI Integration (Personal Project)</p>
@@ -101,42 +102,49 @@
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">2. Two-Tier API &amp; MongoDB Architecture</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">2. Automated Daily AI Blog Publishing (AI &amp; LLM Automation)</h4>
+                  <p class="tw-text-base text-muted lh-base mb-0">
+                    Engineered an intelligent automated content engine powered by Large Language Models (LLMs) that drafts, formats, and publishes SEO-optimized agency blog articles every single day. The pipeline autonomously handles niche topic generation, structured markdown formatting, metadata tagging, and direct database insertion into MongoDB Atlas—delivering completely hands-free organic traffic growth.
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-3 border-bottom border-gray-100">
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">3. Two-Tier API &amp; MongoDB Architecture</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
                     Designed Next.js API Routes (`src/app/api/`) into two distinct tiers: public read-only endpoints (`/api/users/*`) and secure authenticated CRUD routes (`/api/admin/*`), plus versioned APIs (`/api/v1/*`). Managed via MongoDB Atlas with 9 Mongoose models (AdminUser, Blog, BlogComment, ClientLogo, ContactInquiry, PortfolioCard, Service, SiteSettings, Testimonial) and RFC 9457 ProblemDetails error responses.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">3. Full Admin Dashboard with A-to-Z Management</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">4. Full Admin Dashboard with A-to-Z Management</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
                     Built an internal admin suite enabling administrators to manage all website content seamlessly—including live blog moderation, service listings, client logos, testimonials, and site metadata—with instant Vercel Blob media uploads.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">4. State Management &amp; Data Fetching (TanStack React Query v5)</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">5. State Management &amp; Data Fetching (TanStack React Query v5)</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
                     Implemented `@tanstack/react-query` v5 with optimized caching (`staleTime: 5 min`, `gcTime: 30 min`), automatic query invalidation on mutations, toast notifications via Sonner, and Server Component `initialData` passing for smooth SSR &amp; client-side transitions.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">5. Custom Authentication &amp; Proxy Guard</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">6. Custom Authentication &amp; Proxy Guard</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
                     Implemented a zero-dependency custom auth system featuring WebCrypto HMAC-SHA256 signed session tokens, bcryptjs password hashing, `httpOnly` cookie session storage (`quzex_admin_session`), and a `proxy.ts` middleware to protect `/dashboard` and manage API rewrites.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">6. Advanced Animations &amp; UI Utilities</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">7. Advanced Animations &amp; UI Utilities</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
                     Crafted smooth user interactions using Framer Motion (v12), Lucide React icons, Class Variance Authority (CVA), `next-themes` dark/light mode, and custom Tailwind animation extensions.
                   </p>
                 </div>
 
                 <div class="mb-4 pb-3 border-bottom border-gray-100">
-                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">7. AI / LLM-Ready &amp; Programmatic Endpoints</h4>
+                  <h4 class="tw-text-xl fw-bold text-main-two-600 mb-2">8. AI / LLM-Ready &amp; Programmatic Endpoints</h4>
                   <p class="tw-text-base text-muted lh-base mb-0">
                     Built first-class AI readiness features including `/llms.txt`, `/llms-full.txt`, `/openapi.json`, programmatic `/developer` docs, markdown content-negotiation via `Accept: text/markdown` headers, and full JSON-LD structured data schemas for search engines and LLM agents.
                   </p>
@@ -174,6 +182,7 @@
                     <span class="badge bg-light text-heading border border-gray-200">Framer Motion</span>
                     <span class="badge bg-light text-heading border border-gray-200">Vercel Blob</span>
                     <span class="badge bg-light text-heading border border-gray-200">WebCrypto HMAC</span>
+                    <span class="badge bg-light text-heading border border-gray-200">AI / LLM Auto-Blogging</span>
                     <span class="badge bg-light text-heading border border-gray-200">AI / LLM-Ready</span>
                   </div>
                 </div>
